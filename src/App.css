@@ -9,7 +9,6 @@ body {
 
 .header {
   margin-top: -45px;
-
   background: #C71616;
   height: 100px;
   text-align: center;
@@ -18,12 +17,13 @@ body {
 }
 
 .container {
-
   display: grid;
   place-items: center;
 }
 
 #startBtn {
+  display: grid;
+  place-items: center;
   margin-top: 100px;
   background: #C71616;
   width: 150px;
@@ -38,30 +38,18 @@ body {
   opacity: 75%;
 }
 
-.navbar {
-  position: absolute;
-  border-style: solid;
-  border-color: black;
-
-  width: 100px;
-  height: calc(100vh - 100px);
-  background: #C71616;
-}
-
 .homePage {
   height: 100vh;
 }
 
 .tutorial {
   height: 100vh;
-
 }
 
 .dialog {
   background: #230E0E;
   margin-left: 850px;
   color: #C71616;
-  
 }
 
 .dialogBar {

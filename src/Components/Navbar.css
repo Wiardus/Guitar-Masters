@@ -1,0 +1,22 @@
+.navbar {
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    width: 100px;
+    height: calc(100vh - 100px);
+    background: #C71616;
+  }
+  
+  button {
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 25px;
+  }
+  
+  button:hover {
+    opacity: 50%;
+  }
