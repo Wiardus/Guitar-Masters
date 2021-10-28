@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Header from './Header'
 
-
-
 interface Props {
     username: string
     isLoggedIn: boolean
@@ -23,10 +21,14 @@ const Login: React.FC<Props> = ({username}: Props) => {
             return 
         } else {
             alert('Welcome '+ userName.username)
-            setIsLoggedIn({...IsLoggedIn, isLoggedIn: true})
-           
-        }
-    
+            setIsLoggedIn({...IsLoggedIn, isLoggedIn: true})               
+        }   
+    }
+
+    if (IsLoggedIn.isLoggedIn === false) {
+        document.body.style.overflowY = 'hidden'
+    } else {
+        document.body.style.overflowY = 'visible'
     }
 
     console.log(IsLoggedIn)
