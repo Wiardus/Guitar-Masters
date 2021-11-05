@@ -12,22 +12,14 @@ import {
 const Navbar = () => {
 
     return (
-        <Router>
+      
         <div className="navbar">
-            <ul>
-                <li>
-                    <Link to="/HomePage">
-                        Home
-                    </Link>
-                </li>
-            </ul>
-            
+            <button>Home</button>
             <button>Profile</button>
             <button>Community</button>
             <button>Settings</button>           
-            <GMDialog />
+            <GMDialog />  
         </div>
-        </Router>
     )
 }
 

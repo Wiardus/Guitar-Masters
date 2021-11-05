@@ -15,15 +15,8 @@ import {
 function App() {
   return (
     <div>    
-      <Login username={''} isLoggedIn={false} />
-      <Router>
-        <Switch>
-          <Route path="/HomePage">
-          <HomePage />
-          </Route>
-        </Switch>
-      </Router>
-      
+      <Login username={''} isLoggedIn={false} />    
+      <HomePage />
       <Tutorial />
     </div>
   );
