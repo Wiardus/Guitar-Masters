@@ -21,8 +21,8 @@ const GMDialog = () => {
         <div className="GMDialog">
             <h3>Your Songs:</h3>
             <ul>
-                <li>Smoke on the Water</li>
-                <li style={styles.completedSong}>CLiffs of Dover</li>
+                <li className="songListItem">Smoke on the Water</li>
+                <li className="songListItem" style={styles.completedSong}>CLiffs of Dover</li>
             </ul>
         </div>
     )

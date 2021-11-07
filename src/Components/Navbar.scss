@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+.navbar {
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    width: 10vw;
+    height: calc(100vh - 100px);
+    background: #C71616;
+    font-family: 'Germania One'; 
+
+    button {
+      border-style: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 25px;
+      font-family: 'Germania One'; 
+    }
+    
+    button:hover {
+      opacity: 50%;
+    }
+
+  }
+  

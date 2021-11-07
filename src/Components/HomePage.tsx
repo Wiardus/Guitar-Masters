@@ -12,6 +12,9 @@ const HomePage = () => {
             <Navbar />
             <div className="container">
                 <button id="startBtn" onClick={start}>Start</button>
+                <div className="guitarAnimation">
+                    <img id="guitarSvg" src='https://upload.wikimedia.org/wikipedia/commons/5/53/LP_Guitar_black.svg' />
+                </div>
             </div>
           
 

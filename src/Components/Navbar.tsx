@@ -1,5 +1,5 @@
 import GMDialog from './GMDialog';
-import './Navbar.css';
+import './Navbar.scss';
 import {
     BrowserRouter as Router,
     Switch,

@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
+
 $main-red-color: #C71616;
+
+* {
+  cursor: url('./pick.png'), auto;
+}
 
 body {
   margin: 0;
@@ -43,6 +48,34 @@ body {
 
 .homePage {
   height: 100vh;
+
+  @keyframes rotate {
+    100% {
+      transform:rotate(20deg);
+      opacity: 100%;
+    }
+
+    50% {
+      opacity: 75%;
+      transform:rotate(-20deg);
+    }
+
+    0% {
+      opacity: 50%;
+      
+    }
+  }
+
+  .guitarAnimation{
+    opacity: 50%;
+  }
+
+  .guitarAnimation:hover {
+    
+    animation-name: rotate;
+    animation-duration: 2.5s;
+  }
+
 }
 
 .tutorial {
@@ -67,10 +100,22 @@ body {
   place-items: center;
   height: 100vh;
 
-  
   button {
     background: #C71616;
     margin-top: -825px;
+    border-style: none;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+
+    
+  }
+
+  button:hover {
+    opacity: 75%;
   }
 
   input {
@@ -93,6 +138,17 @@ body {
   height: 100vh;
   width: 100vw;
   background: pink;
+  font-size: 1.5em;
+
+  .songListItem {
+    cursor: pointer;
+    transition: 2s;
+  }
+
+  .songListItem:hover {
+    transform: scale(150%);
+  }
+
 }
 
 .tutorialDialog {
@@ -110,9 +166,17 @@ body {
   width: 10vw;
   height: 5vw;
   background: $main-red-color;
-  color: gold;
+  color: wheat;
   margin-left: 860px;  
   text-align: center;
   border-radius: 10%;
-  font-style: italic;
+  border-style: none;
+  margin-top: 20px;
+  cursor: pointer;
+  
 }
+
+.tutorialDialogBtn:hover {
+  opacity: 50%;
+}
+  
