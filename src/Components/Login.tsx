@@ -3,7 +3,13 @@ import Header from './Header'
 
 interface Props {
     username: string
+    password?: string
     isLoggedIn: boolean
+}
+
+let user = {
+    username: 'Ynte',
+    password: '123'
 }
 
 const Login: React.FC<Props> = ({username}: Props) => {
@@ -11,13 +17,17 @@ const Login: React.FC<Props> = ({username}: Props) => {
         username: ''
     })
 
+    const [passWord, setPassWord] = useState ({
+        password: ''
+    })
+
     const [IsLoggedIn, setIsLoggedIn] = useState({
         isLoggedIn: false
     })
 
     function logIn () {
-        if (userName.username !== 'Ynte') {
-            alert('Your username is incorrect')
+        if (userName.username !== user.username || passWord.password !== user.password) {
+            alert('Your username or password is incorrect')
             return 
         } else {
             alert('Welcome '+ userName.username)
@@ -39,6 +49,7 @@ const Login: React.FC<Props> = ({username}: Props) => {
             <form className="login">
                 <h3>Username:</h3>
                 <input type="text" value={userName.username} onChange={(e) => setUserName({...userName, username: e.target.value})} placeholder="Enter your username..." />
+                <input type="text" value={passWord.password} onChange={(e) => setPassWord({...passWord, password: e.target.value})} />
                 <button type="button" onClick={logIn}>Login</button>
             </form>
         </div>
