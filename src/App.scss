@@ -38,6 +38,8 @@ body {
     font-family: 'Germania One';
     font-size: 2.5em;
     border-style: none;
+    box-shadow: 5px 5px;
+
   }
 
   #startBtn:hover {
@@ -70,8 +72,7 @@ body {
     opacity: 50%;
   }
 
-  .guitarAnimation:hover {
-    
+  .guitarAnimation:hover {   
     animation-name: rotate;
     animation-duration: 2.5s;
   }
@@ -99,10 +100,10 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
-
+  
   button {
     background: #C71616;
-    margin-top: -825px;
+    margin-top: -250px;
     border-style: none;
     width: 100px;
     height: 50px;
@@ -110,8 +111,7 @@ body {
     cursor: pointer;
     border-radius: 5%;
     font-weight: bold;
-
-    
+    box-shadow: 5px 5px;
   }
 
   button:hover {
@@ -122,15 +122,21 @@ body {
     background: silver;
     border-style: none;
     height: 25px;
+    margin-top: -250px;
   }
 
   h3 {
     font-family: 'Arial';
     font-size: 1.5em;
-    position: absolute;
-    color: whitesmoke;
-    margin-top: -500px;
+    color: whitesmoke; 
   }
+
+  #passwordHeader {
+    margin-top: -300px;
+    margin-bottom: -250px;
+  }
+
+ 
 }
 
 .GMDialog {
@@ -172,8 +178,7 @@ body {
   border-radius: 10%;
   border-style: none;
   margin-top: 20px;
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 
 .tutorialDialogBtn:hover {

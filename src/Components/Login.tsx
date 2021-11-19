@@ -49,8 +49,9 @@ const Login: React.FC<Props> = ({username}: Props) => {
             <form className="login">
                 <h3>Username:</h3>
                 <input type="text" value={userName.username} onChange={(e) => setUserName({...userName, username: e.target.value})} placeholder="Enter your username..." />
-                <input type="text" value={passWord.password} onChange={(e) => setPassWord({...passWord, password: e.target.value})} />
-                <button type="button" onClick={logIn}>Login</button>
+                <h3 id="passwordHeader">Password:</h3>
+                <input type="text" value={passWord.password} onChange={(e) => setPassWord({...passWord, password: e.target.value})} placeholder="Enter your password..."/>
+                <button id="passwordInput" type="button" onClick={logIn}>Login</button>
             </form>
         </div>
        
