@@ -7,7 +7,7 @@ interface Props {
     isLoggedIn: boolean
 }
 
-let user = {
+export let user = {
     username: 'Ynte',
     password: '123'
 }
@@ -36,7 +36,7 @@ const Login: React.FC<Props> = ({username}: Props) => {
     }
 
     if (IsLoggedIn.isLoggedIn === false) {
-        document.body.style.overflowY = 'hidden'
+        //document.body.style.overflowY = 'hidden'
     } else {
         document.body.style.overflowY = 'visible'
     }
@@ -47,11 +47,15 @@ const Login: React.FC<Props> = ({username}: Props) => {
         <div>
             <Header title={'Guitar Masters©'} />
             <form className="login">
-                <h3>Username:</h3>
-                <input type="text" value={userName.username} onChange={(e) => setUserName({...userName, username: e.target.value})} placeholder="Enter your username..." />
-                <h3 id="passwordHeader">Password:</h3>
-                <input type="text" value={passWord.password} onChange={(e) => setPassWord({...passWord, password: e.target.value})} placeholder="Enter your password..."/>
-                <button id="passwordInput" type="button" onClick={logIn}>Login</button>
+                <div className="username">
+                    <h3>Username:</h3>
+                    <input type="text" value={userName.username} onChange={(e) => setUserName({...userName, username: e.target.value})} placeholder="Enter your username..." />
+                </div>     
+                <div className="password">
+                    <h3 id="passwordHeader">Password:</h3>
+                    <input type="text" value={passWord.password} onChange={(e) => setPassWord({...passWord, password: e.target.value})} placeholder="Enter your password..."/>
+                </div>         
+                <button type="button" onClick={logIn}>Login</button>
             </form>
         </div>
        

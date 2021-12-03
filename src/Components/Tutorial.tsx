@@ -12,8 +12,7 @@ const Tutorial = () => {
             <Header title={'Tutorial'}/>
             <Navbar />
             <h1>Welcome</h1>
-            <TutorialDialog header={'Welcome to Guitar Masters!'} content={'Guitar Masters is a platform for learning guitar in a modern, exciting way.'} buttonName={'Click here to get started'}/>
-            <TutorialDialog header={'Tutorial'} buttonName={'Next'} />            
+            <TutorialDialog header={'Welcome to Guitar Masters!'} content={'Guitar Masters is a platform for learning guitar in a modern, exciting way.'} buttonName={'Click here to get started'}/>           
         </div>
        
     )

@@ -2,6 +2,7 @@
 
 
 $main-red-color: #C71616;
+$main-font: 'Germania One';
 
 * {
   cursor: url('./pick.png'), auto;
@@ -10,7 +11,7 @@ $main-red-color: #C71616;
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Germania One';
+  font-family: $main-font;
   background: #230E0E;
 }
 
@@ -35,7 +36,7 @@ body {
     width: 150px;
     height: 75px;
     border-radius: 20%;
-    font-family: 'Germania One';
+    font-family: $main-font;
     font-size: 2.5em;
     border-style: none;
     box-shadow: 5px 5px;
@@ -91,7 +92,7 @@ body {
   .dialogBar {
     background: #C71616;
     color: black;
-    font-family: 'Germania One'
+    font-family: $main-font;
   }
 
 }
@@ -101,6 +102,10 @@ body {
   place-items: center;
   height: 100vh;
   
+  .username {
+    margin-bottom: -250px;
+  }
+
   button {
     background: #C71616;
     margin-top: -250px;
@@ -130,12 +135,6 @@ body {
     font-size: 1.5em;
     color: whitesmoke; 
   }
-
-  #passwordHeader {
-    margin-top: -300px;
-    margin-bottom: -250px;
-  }
-
  
 }
 
@@ -148,11 +147,11 @@ body {
 
   .songListItem {
     cursor: pointer;
-    transition: 2s;
+    transition: 0.75s;
   }
 
   .songListItem:hover {
-    transform: scale(150%);
+    transform: translateX(25px)
   }
 
 }
@@ -163,16 +162,18 @@ body {
   height: 50vh;
   width: 50vw;
   background: $main-red-color;
+  font-size: 2em;
 } 
 
 .tutorialDialogBtn {
   display: table-cell;
-  font-size: 1.5em;
+  font-family: $main-font;
+  font-size: 2em;
   text-align:center;
   width: 10vw;
   height: 5vw;
   background: $main-red-color;
-  color: wheat;
+  color: black;
   margin-left: 860px;  
   text-align: center;
   border-radius: 10%;
@@ -185,3 +186,17 @@ body {
   opacity: 50%;
 }
   
+.community {
+  background: $main-red-color;
+  width: 75vw;
+  height: 75vh;
+  border-style: solid;
+  text-align: center;
+  margin-left: 200px;
+  margin-bottom: 200px;
+  position: absolute;
+
+  h2 {
+    font-size: 3em;
+  }
+}

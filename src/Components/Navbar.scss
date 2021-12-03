@@ -24,5 +24,20 @@
       opacity: 50%;
     }
 
+    .link {
+      text-decoration: none;
+      border-style: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 25px;
+      font-family: 'Germania One'; 
+    }
+
+    .link:hover {
+      opacity: 50%;
+    }
   }
   

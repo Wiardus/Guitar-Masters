@@ -17,7 +17,6 @@ const TutorialDialog = ({header, content, buttonName} : TutorialDialogProps) => 
         <div className="tutorialDialog">
             <h2>{header}</h2>
             <p>{content}</p>
-            <button>Next</button>
         </div> 
         )    
     
