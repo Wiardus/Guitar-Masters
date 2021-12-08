@@ -9,6 +9,10 @@ import { useState } from 'react'
     let community = (
         <div className="community">
             <h2>Community</h2>
+            <ul><b>Friends: </b>
+                <li>friend</li>
+
+            </ul>
         </div>
     )
 

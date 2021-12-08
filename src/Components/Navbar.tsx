@@ -6,14 +6,16 @@ import {
 } from 'react-router-dom';
 import Profile from './Profile';
 
+interface Props {
+    href: string
+}
 
 const Navbar = () => {
-
     return (
     <div>
         <nav className="navbar">
             <Link to="/home" className="link">Home</Link>
-            <Link to="/tutorial">Tutorial</Link>
+            <Link to="/tutorial" className="link">Tutorial</Link>
             <Profile />
             <Community />
             <button>Settings</button>           

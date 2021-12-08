@@ -18,7 +18,7 @@ const GMDialog = () => {
     })
 
     let gmdialog = (
-        <div className="GMDialog">
+        <div className="songList">
             <h3>Your Songs:</h3>
             <ul>
                 <li className="songListItem">Smoke on the Water</li>

@@ -9,21 +9,17 @@ import {
 function App() {
   return (
     <div>    
-      <Login username={''} isLoggedIn={false} />  
-      
-      <BrowserRouter>
-    
-      <Switch>
-        <Route path="/home">  
-          <HomePage />
-        </Route>
-        <Route path="tutorial">
-          <Tutorial />
-        </Route>
-      </Switch>
-      
-      
-      </BrowserRouter>  
+      <Login username={''} isLoggedIn={false} />   
+      <BrowserRouter>    
+        <Switch>
+          <Route path="/home">  
+            <HomePage />
+          </Route>
+          <Route path="/tutorial">        
+            <Tutorial />  
+          </Route>
+        </Switch>
+    </BrowserRouter>  
     </div>
   );
 }
