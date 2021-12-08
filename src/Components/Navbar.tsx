@@ -2,7 +2,7 @@ import Community from './Community';
 import GMDialog from './GMDialog';
 import './Navbar.scss';
 import {
-    BrowserRouter as Router, Route, Link, Switch
+    BrowserRouter as Router, Link
 } from 'react-router-dom';
 import Profile from './Profile';
 
