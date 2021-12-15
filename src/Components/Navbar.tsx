@@ -1,9 +1,6 @@
 import Community from './Community';
 import GMDialog from './GMDialog';
 import './Navbar.scss';
-import {
-    BrowserRouter as Router, Link
-} from 'react-router-dom';
 import Profile from './Profile';
 
 interface Props {
@@ -14,15 +11,14 @@ const Navbar = () => {
     return (
     <div>
         <nav className="navbar">
-            <Link to="/home" className="link">Home</Link>
-            <Link to="/tutorial" className="link">Tutorial</Link>
+            <button className="link">Home</button>
+            <button className="link">Tutorial</button>
             <Profile />
             <Community />
             <button>Settings</button>           
             <GMDialog />  
         </nav>
     </div>
-  
     )
 }
 
